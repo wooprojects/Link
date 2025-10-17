@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کوتاه‌کننده لینک</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>کوتاه‌کننده لینک</h1>
+            <p>لینک‌های طولانی خود را به راحتی کوتاه کنید</p>
+        </header>
+
+        <main>
+            <div class="url-form">
+                <div class="input-group">
+                    <input type="url" id="url-input" placeholder="https://example.com/very-long-url..." required>
+                    <button id="shorten-btn">کوتاه کردن</button>
+                </div>
+                <div id="custom-slug-container" class="hidden">
+                    <label for="custom-slug">نام دلخواه (اختیاری):</label>
+                    <input type="text" id="custom-slug" placeholder="my-link">
+                </div>
+            </div>
+
+            <div id="result" class="hidden">
+                <h3>لینک کوتاه شده:</h3>
+                <div class="result-container">
+                    <input type="text" id="short-url" readonly>
+                    <button id="copy-btn">کپی</button>
+                </div>
+                <div class="actions">
+                    <button id="new-link-btn">لینک جدید</button>
+                    <a href="#" id="visit-link" target="_blank" class="hidden">بازدید از لینک</a>
+                </div>
+            </div>
+
+            <div id="error" class="hidden">
+                <p id="error-message"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>ساخته شده با ❤️ | تمامی حقوق محفوظ است</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
